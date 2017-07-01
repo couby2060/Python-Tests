@@ -99,3 +99,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# google analytics json files
+client_id.json
+client_secrets.json
