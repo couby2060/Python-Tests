@@ -3,7 +3,7 @@ import csv
 import re
 
 def main():
-    pattern = re.compile("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")
+    pattern = re.compile("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]{2,}$")
     with open(sys.argv[1], 'r') as csvfile:
         my_file = csv.reader(csvfile, delimiter=';', quotechar='"')
         emails = set()
