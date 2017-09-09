@@ -1,4 +1,3 @@
-#from sys import argv #Warum funktioniert die Zeile mit dem Import nicht?
 import sys
 import csv
 import re
@@ -11,11 +10,9 @@ def main():
         for row in my_file:
             if row[4] not in emails:
                 emails.add(row[4])
-                #print(', '.join(row))
                 if pattern.match(row[4]):
                     emails.add(row[4])
                     print(', '.join(row))
-                   
                    
 if __name__ == "__main__":
     main()
